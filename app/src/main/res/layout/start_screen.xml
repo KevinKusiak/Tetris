@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:onClick="onStart" android:textAllCaps="false" android:text="Start Game!" android:id="@+id/Start" android:layout_marginTop="100dp" android:layout_centerHorizontal="true"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:onClick="onSettings" android:textAllCaps="false" android:text="Settings" android:id="@+id/Settings" android:layout_marginTop="15dp" android:layout_centerHorizontal="true" android:layout_below="@+id/Start"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:onClick="onMaps" android:textAllCaps="false" android:text="Maps" android:id="@+id/Maps" android:layout_marginTop="15dp" android:layout_centerHorizontal="true" android:layout_below="@+id/Settings"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:onClick="onExit" android:textAllCaps="false" android:text="Goodbye, App" android:id="@+id/Exit" android:layout_marginTop="15dp" android:layout_centerHorizontal="true" android:layout_below="@+id/Maps"/>
+
+</RelativeLayout>

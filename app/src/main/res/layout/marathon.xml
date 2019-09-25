@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <FrameLayout tools:context="com.example.tetris.Marathon" android:id="@+id/mainLayout" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <TextView android:id="@+id/TV2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Score : 0" style="@android:style/TextAppearance.DeviceDefault.Medium" android:layout_marginTop="10dp" android:layout_centerHorizontal="true"/>
+
+    <TextView android:id="@+id/TV" android:layout_height="wrap_content" android:layout_width="wrap_content" style="@android:style/TextAppearance.DeviceDefault.Medium" android:fontFamily="monospace" android:layout_marginLeft="10dp" android:layout_centerVertical="true"/>
+
+    <Button android:id="@+id/Pause" android:layout_height="25dp" android:layout_width="25dp" android:layout_marginTop="17.5dp" android:background="@drawable/pausebutton" android:onClick="onPause" android:layout_marginRight="17.5dp" android:layout_alignParentRight="true"/>
+
+    <ImageView android:id="@+id/IV" android:layout_height="50dp" android:layout_width="50dp" android:layout_marginTop="10dp" android:background="@drawable/tetrisgray" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_below="@id/Pause"/>
+
+    <ImageView android:id="@+id/IV2" android:layout_height="50dp" android:layout_width="50dp" android:layout_marginTop="10dp" android:background="@drawable/tetrisgray" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_below="@id/IV"/>
+
+    <ImageView android:id="@+id/IV3" android:layout_height="50dp" android:layout_width="50dp" android:layout_marginTop="10dp" android:background="@drawable/tetrisgray" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_below="@id/IV2"/>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical" android:layout_alignParentBottom="true">
+
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+    <Button android:id="@+id/ButtonSoftDrop" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="↓" android:onClick="onDropClick" android:textSize="30dp" android:layout_weight="1"/>
+
+    <Button android:id="@+id/ButtonRotate180" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="↕" android:layout_centerHorizontal="true" android:onClick="onDropClick" android:textSize="30dp" android:layout_weight="1"/>
+
+    <Button android:id="@+id/ButtonHold" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="↗" android:layout_centerHorizontal="true" android:onClick="onDropClick" android:textSize="30dp" android:layout_weight="1"/>
+
+    <Button android:id="@+id/ButtonHardDrop" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="▼" android:onClick="onDropClick" android:layout_alignParentRight="true" android:textSize="30dp" android:layout_weight="1"/>
+
+</LinearLayout>
+
+</RelativeLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_alignParentBottom="true">
+
+    <Button android:id="@+id/ButtonLeft" android:layout_height="wrap_content" android:layout_width="0dp" android:text="←" android:onClick="onClick" android:textSize="30dp" android:layout_weight="3"/>
+
+    <Button android:id="@+id/ButtonRotateLeft" android:layout_height="wrap_content" android:layout_width="0dp" android:text="↶" android:onClick="onRotateClick" android:textSize="30dp" android:layout_weight="2"/>
+
+    <Button android:id="@+id/ButtonRotateRight" android:layout_height="wrap_content" android:layout_width="0dp" android:text="↷" android:onClick="onRotateClick" android:textSize="30dp" android:layout_weight="2"/>
+
+    <Button android:id="@+id/ButtonRight" android:layout_height="wrap_content" android:layout_width="0dp" android:text="→" android:onClick="onClick" android:textSize="30dp" android:layout_weight="3"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <TextView android:id="@+id/TV4" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Level : 0" android:layout_marginTop="70dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_alignTop="@+id/IV3"/>
+
+    <TextView android:id="@+id/TV3" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Lines : 0" android:layout_marginTop="100dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_alignTop="@+id/IV3"/>
+
+    <ImageView android:id="@+id/IV4" android:layout_height="50dp" android:layout_width="50dp" android:layout_marginTop="10dp" android:background="@drawable/tetrisgray" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_below="@id/TV3"/>
+
+
+    <ScrollView android:layout_height="100dp" android:layout_width="66dp" android:layout_marginTop="10dp" android:layout_marginRight="2dp" android:layout_alignParentRight="true" android:layout_below="@+id/IV4">
+
+    <TextView android:id="@+id/TV5" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Points!" android:fontFamily="monospace" android:visibility="visible" android:layout_gravity="center_horizontal"/>
+
+</ScrollView>
+
+</RelativeLayout>
+
+</FrameLayout>

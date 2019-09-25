@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal" android:padding="10dp">
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical" android:padding="10dp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@android:style/TextAppearance.DeviceDefault.Medium" android:textColor="#000000" android:text="Rotation System"/>
+
+
+    <RadioGroup android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/RadioRotation">
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Classic Tetris" android:id="@+id/classic" android:onClick="onRotateSetting"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Modern/SRS" android:id="@+id/SRS" android:onClick="onRotateSetting"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Insanely Flexible" android:id="@+id/custom" android:onClick="onRotateSetting"/>
+
+</RadioGroup>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical" android:padding="10dp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@android:style/TextAppearance.DeviceDefault.Medium" android:textColor="#000000" android:text="Randomize System"/>
+
+
+    <RadioGroup android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/RadioRandom">
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Completely Random" android:id="@+id/completeRandom" android:onClick="onRandomSetting"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Classic Tetris" android:id="@+id/classicRandom" android:onClick="onRandomSetting"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="7 Bag (Modern)" android:id="@+id/bag7Random" android:onClick="onRandomSetting"/>
+
+</RadioGroup>
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Show Points Log (Lists all line clears made when playing. Located under the Hold Piece image)" android:id="@+id/showPoints" android:onClick="showPointsLog" android:layout_gravity="center_horizontal" android:textAllCaps="false"/>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="horizontal" android:padding="10dp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@android:style/TextAppearance.DeviceDefault.Medium" android:textColor="#000000" android:text="DAS"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" style="@android:style/TextAppearance.DeviceDefault.Small" android:id="@+id/ED1" android:layout_marginLeft="10dp" android:hint="Delayed Auto Shift"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@android:style/TextAppearance.DeviceDefault.Medium" android:textColor="#000000" android:text="ARR" android:layout_marginLeft="10dp"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" style="@android:style/TextAppearance.DeviceDefault.Small" android:id="@+id/ED2" android:layout_marginLeft="10dp" android:hint="Auto Repeat Rate"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="horizontal" android:padding="10dp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@android:style/TextAppearance.DeviceDefault.Medium" android:textColor="#000000" android:text="Soft Drop"/>
+
+
+    <RadioGroup android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="horizontal" android:id="@+id/RadioSoftDrop" android:layout_marginLeft="25dp">
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Slow" android:id="@+id/softDropSlow" android:onClick="onSoftDropSetting"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Normal" android:id="@+id/softDropClassic" android:onClick="onSoftDropSetting"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Fast" android:id="@+id/softDropFast" android:onClick="onSoftDropSetting"/>
+
+</RadioGroup>
+
+</LinearLayout>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="" android:id="@+id/RButton" android:onClick="onReset" android:layout_gravity="center_horizontal" android:textAllCaps="false" android:gravity="center_horizontal" android:minLines="2" android:layout_marginTop="10dp"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Exit Settings" android:onClick="onExit" android:layout_gravity="center_horizontal" android:textAllCaps="false" android:layout_marginTop="10dp"/>
+
+</LinearLayout>

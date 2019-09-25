@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="1"/>
+
+    <Button android:layout_height="0dp" android:layout_width="match_parent" android:layout_weight="1" android:textColor="#000000" style="@android:style/TextAppearance.DeviceDefault.Large" android:textAllCaps="false" android:layout_gravity="center_horizontal" android:text="Marathon" android:onClick="onMarathon"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="1"/>
+
+    <Button android:layout_height="0dp" android:layout_width="match_parent" android:layout_weight="1" android:textColor="#000000" style="@android:style/TextAppearance.DeviceDefault.Large" android:textAllCaps="false" android:layout_gravity="center_horizontal" android:text="Sprint" android:onClick="onSprint"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="1"/>
+
+</LinearLayout>

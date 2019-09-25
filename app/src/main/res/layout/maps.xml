@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView android:layout_height="wrap_content" android:layout_width="match_parent">
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical">
+
+    <TextView android:layout_height="30dp" android:layout_width="match_parent" android:background="@drawable/tetrisgray" android:gravity="center_horizontal" style="@android:style/TextAppearance.DeviceDefault.Large" android:text="Map Gallery"/>
+
+
+    <RadioGroup android:layout_height="wrap_content" android:layout_width="match_parent">
+
+
+    <LinearLayout android:layout_height="300dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="0dp" android:background="@drawable/mapone" android:layout_weight="5" android:id="@+id/Map1"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="0dp" android:background="@drawable/maptwo" android:layout_weight="5" android:id="@+id/Map2"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="0dp" android:text="Map 1 - Default" android:layout_weight="5" android:id="@+id/Button1" android:onClick="onMap" android:checked="true" android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="0dp" android:text="Map 2 - Opening" android:layout_weight="5" android:id="@+id/Button2" android:onClick="onMap" android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_height="300dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="0dp" android:background="@drawable/mapthree" android:layout_weight="5" android:id="@+id/Map3"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="0dp" android:background="@drawable/mapfour" android:layout_weight="5" android:id="@+id/Map4"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="0dp" android:text="Map 3 - Double Pancake" android:layout_weight="5" android:id="@+id/Button3" android:onClick="onMap" android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="0dp" android:text="Map 4 - Diagonal Annoyance" android:layout_weight="5" android:id="@+id/Button4" android:onClick="onMap" android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_height="300dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="0dp" android:background="@drawable/mapfive" android:layout_weight="5" android:id="@+id/Map5"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="0dp" android:background="@drawable/mapsix" android:layout_weight="5" android:id="@+id/Map6"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="0dp" android:text="Map 5 - Triple Towers" android:layout_weight="5" android:id="@+id/Button5" android:onClick="onMap" android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="0dp" android:text="Map 6 - Caterpillar Attack" android:layout_weight="5" android:id="@+id/Button6" android:onClick="onMap" android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+
+</LinearLayout>
+
+</RadioGroup>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Exit Maps" android:onClick="onExit" android:layout_gravity="center_horizontal" android:layout_centerHorizontal="true" android:textAllCaps="false" android:layout_marginTop="10dp"/>
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
